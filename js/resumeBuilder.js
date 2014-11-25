@@ -46,10 +46,10 @@ var city = HTMLlocation.replace("%data%", bio.contacts.city);
 var bioPic = HTMLbioPic.replace("%data%", bio.pictureURL);
 var welcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMsg);
 
-var employer = HTMLworkEmployer.replace("%data%", work.employer);
-var title = HTMLworkTitle.replace("%data%", work.position);
-var dates = HTMLworkDates.replace("%data%", work.years_worked);
-var workCity = HTMLworkLocation.replace("%data%", work.city);
+var employer = HTMLworkEmployer.replace("%data%", work.jobs[0].employer);
+var title = HTMLworkTitle.replace("%data%", work.jobs[0].position);
+var dates = HTMLworkDates.replace("%data%", work.jobs[0].years_worked);
+var workCity = HTMLworkLocation.replace("%data%", work.jobs[0].city);
 
 $("#header").prepend(welcomeMsg);
 $("#header").prepend(bioPic);
