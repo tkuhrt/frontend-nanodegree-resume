@@ -84,11 +84,18 @@ a {
   font-size: 18px;
   color: #F3F3F3;
   line-height: 28px;
+  display: block;
 }
 
 #skillsH3 {
   color: #F5AE23;
   display: none;
+}
+
+#skillsH4 {
+  color: #F5AE23;
+  display: none;
+  padding-bottom: 0px;
 }
 
 #skills {
@@ -106,6 +113,15 @@ a {
 .white-text {
   font-weight: bold;
   color: #FFFFFF;
+}
+
+.white-text-skills {
+  font-weight: normal;
+  color: #FFFFFF;
+  font-size: 12px;
+  display: block;
+  padding-top: 0px;
+  font-style: normal;
 }
 
 .gray {
@@ -212,7 +228,8 @@ span {
 
 @media only screen and (min-width: 750px) {
   #skillsH3,
-  #skills,
+  #skillsH4,
+  .skills,
   .biopic {
     display: block;
   }
